@@ -22,10 +22,10 @@ after_success:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Take images and push them to docker hub
-- docker push mrj22/multi-client
-- docker push mrj22/multi-nginx
-- docker push mrj22/multi-server
-- docker push mrj22/multi-worker
+- docker push michaeljohnson422/multi-client
+- docker push michaeljohnson422/multi-nginx
+- docker push michaeljohnson422/multi-server
+- docker push michaeljohnson422/multi-worker
 
 
 language: generic 
