@@ -5,9 +5,6 @@ services:
 before_install:
   - docker build -t michaeljohnson422/react-test -f ./client/Dockerfile.dev ./client
 
-#script:
-#  - docker run michaeljohnson422/react-test npm test -- --coverage
-
 script:
   - docker run -e CI=true michaeljohnson422/react-test npm test
 
@@ -28,4 +25,4 @@ after_success:
 - docker push michaeljohnson422/multi-worker
 
 
-language: generic 
+# language: generic 
